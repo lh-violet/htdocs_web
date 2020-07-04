@@ -1,0 +1,13 @@
+set db_host=localhost
+set db_port=3306
+set db_user=root
+set db=test
+
+set mydql_bin="D:\xampp\mysql\bin"
+set mysqldump=%mydql_bin%\mysqldump.exe
+set mysqlexe=%mydql_bin%\mysql.exe
+set myparam=-h%db_host% -P%db_port% -u%db_user%
+
+%mysqlexe% %myparam% < %db%.sql
+
+pause

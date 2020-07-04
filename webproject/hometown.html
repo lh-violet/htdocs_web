@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" charset="utf-8">
+<title>家乡介绍</title>
+<link rel="stylesheet" type="text/css" href="hh.css">
+<script src="all-function.js"></script>
+<script language="JAVASCRIPT">
+    colors2 = new Array(6);
+    colors2[0]="#000000";
+    colors2[1]="#333300";
+    colors2[2]="#665500";
+    colors2[3]="#997700";
+    colors2[4]="#CC9900";
+    colors2[5]="#FFCC00";
+    var i=0;
+    function fLi2() {
+      line2.style.visibility = "visible";
+      if (i<6) {
+        line2.style.color = colors2[i];
+        i++;
+        timerID2 = setTimeout( "fLi2()", 100);
+      }
+      else {
+        i=0;
+        line2.style.visibility="hidden";
+        TimerID2=setTimeout("fLi2()",500);
+      }
+    }
+	function load(){
+			clock();
+			TimerID2=setTimeout('fLi2()',500);
+			fun();
+		}
+		function fun()
+   {
+    var i=0;
+    i=Math.round(Math.random()*4+1);
+    document.getElementById("img0").src="images/C1-"+ i +".jpg"; //得到<img>元素   //并且修改元素的
+    setTimeout("fun()",1000);
+   }
+	</script>
+</head>
+<style>
+	@keyframes move
+{
+    0%
+    {
+        transform:translateX(1000px);
+    }
+	50%
+    {
+        transform:translateX(-200px);
+    }
+    100%
+    {
+        transform:translateX(1000px);
+    }
+}
+.picTab{
+	height: 650px;
+	border: 4px solid #442203;
+	margin: 0px auto;
+	overflow: hidden;
+	background-color: azure;
+}
+.picTab .topDiv{width:1000px;height:500px; animation:move 25s linear infinite;text-align:center;}
+.picTab div {color:#931B1D; font-size:20px;font-family:幼圆 }
+	</style>
+<body onload="load()" onunload="clearTimeout(TimerID2)">
+	<div class="nav"></div>
+    <h1><div id=line2 style="font-size=150px; color=black; visibility=hidden;text-align: center;">
+    我的故乡——岑溪
+		</div></h1>
+	</div>
+	<div id="dh">
+		<ul>
+			<div class="wai">
+			<li><a href="homepage2.html">我的首页</a></li>
+			<li class="shu"></li>
+			<li><a href="selfintroduction.html">自我介绍</a></li>
+			<li class="shu"></li>
+			<li><a href="hobby.html">个人课表</a></li>
+			<li class="shu"></li>
+			<li><a href="hometown.html">故乡介绍</a></li>
+			<li class="shu"></li>
+			<li><a href="login.html">用户登陆</a></li>
+			<li class="shu"></li>
+			<li><a href="comic.html">动漫推荐</a></li>
+			<li class="shu"></li>
+			<li><a href="book.html">书籍推荐</a></li>
+			<li class="shu"></li>
+			<li><a href="food.html">食物推荐</a></li>
+			<li class="shu"></li>
+			<li><a href="science.html">科研方向</a></li>
+			<li class="shu"></li>
+			<li><a href="interest.html">兴趣爱好</a></li>
+		  <li class="shu"></li>			
+	</ul>
+	</div>
+<div align="center">
+	<ul>
+		<li><img src="lcd/0.gif"/><img src="lcd/0.gif"/><img src="lcd/dot.gif"/><img src="lcd/0.gif"/><img src="lcd/0.gif"/><img src="lcd/dot.gif"/><img src="lcd/0.gif"/><img src="lcd/0.gif"/></li>
+	</ul>
+</div>
+	
+	<div class="picture">
+	<img id="img0" src="images/C1-1.jpg">
+	</div>
+	<div class="nav"></div>
+	<div class="nav"></div>
+	<div class="nav"></div>
+	<div class="nav"></div>
+	<div class="nav"></div>
+	<DIV class="picTab">
+	<div  class="topDiv"> 
+		<table style="text-align:left ">
+			<tr><td><br></td><td><br></td><td><br></td><td><br></td></tr>
+			<tr align="center"><td>乡愁&nbsp;&nbsp;余光中</td> <td></td> </tr>
+			<tr align="center"><td><br></td><td><br></td><td><br></td><td><br></td></tr>
+			<tr><td>小时候，乡愁是一枚小小的邮票</td><td></td></tr>   
+			<tr><td><br></td><td><br></td><td><br></td><td><br></td></tr>
+			<tr align="center"><td>我在这头，母亲在那头</td> </tr>
+			<tr><td><br></td><td><br></td><td><br></td><td><br></td></tr>
+			<tr align="center"><td>长大后，乡愁是一张窄窄的船票</td></tr>
+			<tr><td><br></td><td><br></td><td><br></td><td><br></td></tr>
+			<tr align="center"><td>我在这头，新娘在那头</td></tr>
+			<tr><td><br></td><td><br></td><td><br></td><td><br></td></tr>
+			<tr align="center"><td>后来啊，乡愁是一方矮矮的坟墓</td></tr>
+			<tr><td><br></td><td><br></td><td><br></td><td><br></td></tr>
+			<tr align="center"><td>我在外头，母亲在里头</td></tr>
+			<tr><td><br></td><td><br></td><td><br></td><td><br></td></tr>
+			<tr align="center"><td>而现在，乡愁是一湾浅浅的海峡</td></tr>
+			<tr><td><br></td><td><br></td><td><br></td><td><br></td></tr>
+			<tr align="center"><td>我在这头，大陆在那头</td></tr>
+		</table>	
+		</div>
+</DIV>
+	<div class="nav"></div>
+		<div class="nav"></div>
+		<div class="nav"></div>
+		<div class="nav"></div>
+	<div class="nav"></div>
+<div class="gg"></div>
+<div id="footer"></div>
+</body>
+</html>
