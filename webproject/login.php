@@ -1,13 +1,13 @@
 <?php
 include("connect.php");
-$username = $_POST['username'];//post获得用户名表单值
-$passowrd = $_POST['password'];//post获得用户密码单值
+	$username = $_POST['username'];//post获得用户名表单值
+	$password = $_POST['password'];//post获得用户密码单值
 //-----------------------------------------------------------------------------
-if ($username && $passowrd){//如果用户名和密码都不为空
+if ($username && $password){//如果用户名和密码都不为空
 	//-------------------------------------------------------------------------
 	// 检测数据库是否有对应的username和password的sql
 	//
-	$sql    = "select * from user where username = '$username' and password='$passowrd'";
+	$sql    = "select * from user where username = '$username' and password='$password'";
 	$result = mysqli_query($mysqli,$sql);//执行sql
 	$rows   = mysqli_num_rows($result);//返回一个数值
 	//-------------------------------------------------------------------------
