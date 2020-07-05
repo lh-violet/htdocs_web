@@ -35,7 +35,7 @@ CREATE TABLE `book` (
   `username` varchar(30) NOT NULL,
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +44,7 @@ CREATE TABLE `book` (
 
 LOCK TABLES `book` WRITE;
 /*!40000 ALTER TABLE `book` DISABLE KEYS */;
-INSERT INTO `book` VALUES ('book1','12345',1),('home and world','678910',2),('book2','12345',3),('book3','12345',4);
+INSERT INTO `book` VALUES ('大学物理','12345',1),('home and world','678910',2),('量子力学','12345',4),('数学','12345',5),('统计力学','12345',6),('电磁学','12345',15),('量子力学','12345',20),('原子物理','12345',21),('理论力学','12345',22);
 /*!40000 ALTER TABLE `book` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -80,4 +80,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-04 23:43:00
+-- Dump completed on 2020-07-05 10:03:36
